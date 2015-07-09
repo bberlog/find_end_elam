@@ -182,13 +182,13 @@ if __name__ == '__main__':
         for dummy_dev in src_context.itervalues().next()['list_of_nodes']:
             print "starting SRC ELAM on "+dummy_dev
             dummy_file = open('/tmp/elam-src-'+dummy_dev,'w')
-            t = threading.Thread(target=run_commands, args=(src_commands,dummy_dev,results.password,dummy_file,))
-            threads.append(t)
-            t.start()
+            dummy_thread = threading.Thread(target=run_commands, args=(src_commands,dummy_dev,results.password,dummy_file,))
+            threads.append(dummy_thread)
+            dummy_thread.start()
 
         for dummy_dev in dst_context.itervalues().next()['list_of_nodes']:
             print "starting DST ELAM on "+dummy_dev
             dummy_file = open('/tmp/elam-dst-'+dummy_dev,'w')
-            t = threading.Thread(target=run_commands, args=(dst_commands,dummy_dev,results.password,dummy_file,))
-            threads.append(t)
-            t.start()
+            dummy_thread = threading.Thread(target=run_commands, args=(dst_commands,dummy_dev,results.password,dummy_file,))
+            threads.append(dummy_thread)
+            dummy_thread.start()
