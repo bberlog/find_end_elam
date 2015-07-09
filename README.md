@@ -13,3 +13,15 @@ press <ESC>
 press :qw
 change permissions to make file executible by running "chmod +x <FILENAME>"
 Now it's ready to be run.
+
+usage: qq.py [-h] [-s IP_SOURCE] [-d IP_DESTINATION] [-u USERNAME]
+             [-p PASSWORD]
+
+search for EndPoint's IPs and generates ELAM config
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -s IP_SOURCE       Source IP address
+  -d IP_DESTINATION  Destination IP address
+  -u USERNAME        Username
+  -p PASSWORD        password
