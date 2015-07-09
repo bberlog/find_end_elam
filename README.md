@@ -21,7 +21,12 @@ search for EndPoint's IPs and generates ELAM config
 
 optional arguments:
   -h, --help         show this help message and exit
+  
   -s IP_SOURCE       Source IP address
+  
   -d IP_DESTINATION  Destination IP address
+  
   -u USERNAME        Username
+  
   -p PASSWORD        password
+  
