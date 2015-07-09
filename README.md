@@ -6,12 +6,12 @@ saving results to the APIC.
 Meant to be run from APIC
 For the sake of simplicity it's expected to just create a scrip on APIC manually.
 To do so, on APIC :
-vi <FILENAME>
-press "i"
-copy-paste code of the find_end_elam
-press <ESC>
-press :qw
-change permissions to make file executible by running "chmod +x <FILENAME>"
+- vi <FILENAME>
+- press "i"
+- copy-paste code of the find_end_elam
+- press <ESC>
+- type ':qw'
+- change permissions to make file executible by running "chmod +x <FILENAME>"
 Now it's ready to be run.
 
 usage: qq.py [-h] [-s IP_SOURCE] [-d IP_DESTINATION] [-u USERNAME]
